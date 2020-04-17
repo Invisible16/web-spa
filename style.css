@@ -18,8 +18,15 @@ body {
 }
 
 a {
-    color: #6a6a6a !important;
+    color: #6a6a6a;
 }
+.dropdown-item:active{
+    background-color: #6a6a !important;
+    color: #f1f0ed !important;
+}
+/* .dropdown-item.active, .dropdown-item:active {
+    
+} */
 
 .icon {
     font-size: 20pt;

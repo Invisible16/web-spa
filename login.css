@@ -1,0 +1,95 @@
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    /* background-color: #08AEEA;
+    background-image: linear-gradient(230deg, #08AEEA 0%, #2AF598 100%);
+    background: #abbaab;
+    background: linear-gradient(230deg, #f1f0ed, #6a6a6a);
+    W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wrap {
+    background-color: #fafaf8;
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-shadow: 0.2px 0.2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.wrap h2 {
+    user-select: none;
+    margin-top: 1rem;
+    font-family: Abril Fatface;
+
+    /*Không cho ng dùng chọn*/
+}
+
+.wrap button {
+    width: 100%;
+    padding: 0.6rem 0;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    /* background-color: #08AEEA;
+    background-image: linear-gradient(266deg, #08AEEA 0%, #2AF598 100%); */
+    background-color: #62a85d;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+}
+
+.wrap button:hover {
+    outline: none;
+}
+
+.wrap p {
+    margin: 2rem 0;
+    font-size: 15.5px;
+}
+
+.wrap>.block-input {
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.wrap p a {
+    color: inherit;
+    font-weight: 600;
+}
+
+.block-input input {
+    background-color: #fafaf8;
+    border: none;
+    border-bottom: 1px solid #6a6a6a;
+    width: 100%;
+    padding: 8px 0;
+    outline: none;
+
+}
+
+.block-input>label {
+    position: absolute;
+    font-size: smaller;
+    color: rgba(100, 99, 99, 0.651);
+    top: 8px;
+    left: 4px;
+    transition: 200ms ease;
+    pointer-events: none;
+    /*Không cho dùng thao tác chuột nào*/
+}
+
+/*Bắt sự kiện khi focus và khi input valid=> để có valid thì phải thêm required, nếu không khi nhập xong label lại xuống dòng*/
+.block-input input:focus+label,
+.block-input input:valid+label {
+    top: -12px;
+    left: 0;
+    color: #6a6a6a;
+    font-size: 13px;
+    text-shadow: 0.2px 0.2px 1.5px rgba(0, 0, 0, 0.2);
+}
